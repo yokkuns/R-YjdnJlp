@@ -123,7 +123,8 @@ setMethod("toDataFrame", signature="YjdnJlpMA", function(object){
                                reading=word@reading,
                                pos=word@pos,
                                baseform=word@baseform,
-                               count=word@count))
+                               count=word@count,
+                               stringsAsFactors=FALSE))
     }
 
     df
@@ -144,7 +145,8 @@ setMethod("toDataFrame", signature="YjdnJlpDA", function(object){
                                    reading=m@reading,
                                    baseform=m@baseform,
                                    pos=m@pos,
-                                   feature=paste(unlist(m@feature), sep="", collapse=",")
+                                   feature=paste(unlist(m@feature), sep="", collapse=","),
+                                   stringsAsFactors=FALSE
                         ))
         }
     }
@@ -159,7 +161,8 @@ setMethod("toDataFrame", signature="YjdnJlpKeyphrase", function(object){
     for(keyphrase in keyphrase.list){
         df <- rbind(df,
                     data.frame(keyphrase=keyphrase@keyphrase,
-                               score=keyphrase@score))
+                               score=keyphrase@score,
+                               stringsAsFactors=FALSE))
     }
 
     df

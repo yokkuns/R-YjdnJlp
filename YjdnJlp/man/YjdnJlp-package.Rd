@@ -12,7 +12,7 @@ Japanese Text Analysis using Yahoo! Japan develper Network (http://developer.yah
 \tabular{ll}{
 Package: \tab YjdnJlp\cr
 Type: \tab Package\cr
-Version: \tab 0.9.7\cr
+Version: \tab 0.9.8\cr
 Date: \tab 2011-03-20\cr
 License: \tab BSD\cr
 LazyLoad: \tab yes\cr
